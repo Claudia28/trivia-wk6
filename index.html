@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Trivia</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+
+  <!-- Bootstrap latest compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+    <div class="jumbotron">
+        <h1 class="display-4">Random Trivia Quizing!</h1>
+        <p class="lead">How many random facts do you know?</p>
+        <hr class="my-4">
+        
+        <!-- This Div will display once the Start button is clicked and will hide when the game is over -->
+        <div class="gameBoard">            
+            <p>Test your knowledge!</p>
+            <p>Remember the timer! Any unanswered questions will be marked as incorrect.</p>
+            <p class="clickInstruct">Click the button to begin!</p>
+            <p class="lead swap-button">
+                <a class="btn btn-primary btn-lg" id="startGame" href="#" role="button">Click to Start!</a>
+            </p>
+            <div class="buffer"></div>
+        </div>
+
+        <!-- This Div will hide while the game is played and display when it's over -->
+        <div id="calculation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 left_div">
+                        <h1>Thanks for playing!</h1><br>
+                        <h3>Answers Correct: <br><span id="correctAnswers"></span></h3><br>
+                        <h3>Answers Incorrect: <br><span id="incorrectAnswers"></span></h3><br>
+                        <h1>Final Score: <br><span id="finalScore"></span></h1>
+                    </div>
+                    <div class="offset-sm-1 col-sm-8 outcome right_div">
+                        <h3 id="random">Your knowledge is: <br><span id="your_score"></span></h2>
+                        <div class="flex">
+                            <div>
+                                <img id="random_image">
+                            </div>
+                        </div>
+                        <h4 id="explanation"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <!-- jQuery Google CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <!-- Bootstrap JS MaxCDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- JS file -->
+  <script src="assets/javascript/app.js" type="text/javascript"></script>
+</body>
+</html>
+
+   
